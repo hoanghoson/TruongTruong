@@ -390,7 +390,7 @@ header .navbar ul li a.active::before {
     border: 1px solid #eeeeee;
     text-align: center;
     position: relative;
-    border-radius: 5px;
+    border-radius: 35px;
 }
 
 .services .service-content .box::before {
@@ -399,11 +399,12 @@ header .navbar ul li a.active::before {
     background-color: #febd01;
     position: absolute;
     bottom: 0px;
-    width: 50px;
+    width: 20%;
+    max-width: 80%;
     left: 0;
     right: 0;
     margin: auto;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 
 .services .service-content .box:hover::before {
@@ -851,6 +852,7 @@ header .navbar ul li a.active::before {
     width: 100%;
     display: block;
     transition: all 0.5s ease;
+    border-radius: 5px;
 }
 
 .blogs .blogs-content .box:hover .img img {
@@ -970,6 +972,7 @@ header .navbar ul li a.active::before {
     padding: 6px 12px;
     font-size: 14px;
     font-weight: 400;
+    border-radius: 30px;
     font-family: "Poppins", sans-serif;
 }
 
@@ -1204,5 +1207,69 @@ footer .social a:hover {
     }
     .testimonials .testimonials-content .testi-slider .slide {
         flex-wrap: wrap;
+    }
+    .section-title {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .section-title h1:before {
+        content: "";
+        left: 30%;
+        position: absolute;
+        height: 2px;
+        right: 30%;
+        background-color: #febd01;
+        bottom: 0px;
+        /* text-align: center; */
+    }
+}
+
+@media (max-width: 375px) {
+    .home .home-content .block h1 {
+        font-size: 30px;
+    }
+    .home .home-content .block h3 {
+        font-size: 20px;
+    }
+    .home .home-content .block {
+        padding-left: 20px;
+    }
+    .portfolio .portfolio-gallery .item {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .testimonials .testimonials-content .testi-slider {
+        text-align: center;
+    }
+    .testimonials .testimonials-content .testi-slider .slide .img {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .testimonials .testimonials-content .testi-slider .slide {
+        flex-wrap: wrap;
+    }
+    .about-me .about-content .text .info .list {
+        flex: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #dee2e6;
+        padding-bottom: 5px;
+    }
+    .about-me .about-content .text .info .list p .label {
+        color: #000000;
+        font-weight: 600;
+        font-size: 14px;
+    }
+    .about-me .about-content .text .info .list p .p {}
+    .home {
+        min-height: 80vh;
+        background-image: url("images/hero/1.jpg");
+        background-size: cover;
+        background-position: center;
+        padding: 10px;
     }
 }
