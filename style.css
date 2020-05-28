@@ -267,6 +267,7 @@ header .navbar ul li a.active::before {
     display: block;
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
+    border-radius: 10px;
 }
 
 .about-me .about-content .text {
@@ -467,6 +468,7 @@ header .navbar ul li a.active::before {
 .skills .img img {
     width: 100%;
     display: block;
+    border-radius: 10px;
 }
 
 .skills .skills-content .section-title p {
@@ -577,6 +579,7 @@ header .navbar ul li a.active::before {
 .portfolio .portfolio-gallery .item img {
     width: 100%;
     display: block;
+    border-radius: 10px;
 }
 
 .portfolio .portfolio-gallery .item .overlay {
@@ -1249,6 +1252,7 @@ footer .social a:hover {
     }
     .testimonials .testimonials-content .testi-slider .slide {
         flex-wrap: wrap;
+        max-width: 349px;
     }
     .about-me .about-content .text .info .list {
         flex: 100%;
@@ -1271,5 +1275,11 @@ footer .social a:hover {
         background-size: cover;
         background-position: center;
         padding: 10px;
+    }
+    .services .service-content .box {
+        background-color: #ffffff;
+        padding: 5px 30px;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
